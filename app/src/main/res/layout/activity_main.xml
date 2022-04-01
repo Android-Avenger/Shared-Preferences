@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:gravity="center"
+       android:layout_margin="22dp"
+       android:orientation="vertical">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+           android:text="Enter Values"
+           android:textColor="#03A9F4"
+           android:textSize="25sp" />
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:layout_margin="10dp"
+           android:orientation="horizontal">
+
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="2"
+               android:text="User Name :"
+               android:textColor="#6D000000"
+               android:gravity="center"
+               android:textSize="17sp"
+
+               />
+           <com.google.android.material.card.MaterialCardView
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               app:cardCornerRadius="10dp"
+               app:strokeWidth="1dp"
+               app:strokeColor="#1E323739"
+               android:layout_weight="3">
+
+               <EditText
+                   android:id="@+id/userName"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:inputType="text"
+                   android:imeOptions="actionNext"
+                   android:background="#0C000000" />
+
+           </com.google.android.material.card.MaterialCardView>
+
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:layout_margin="10dp"
+           android:orientation="horizontal">
+
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="2"
+               android:text="Wallet :"
+               android:textColor="#6D000000"
+               android:gravity="center"
+               android:textSize="17sp"
+
+               >
+
+           </TextView>
+           <com.google.android.material.card.MaterialCardView
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               app:cardCornerRadius="10dp"
+               app:strokeWidth="1dp"
+               app:strokeColor="#1E323739"
+               android:layout_weight="3">
+
+               <EditText
+                   android:id="@+id/wallet"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:inputType="number"
+                   android:imeOptions="actionNext"
+                   android:background="#0C000000" />
+
+           </com.google.android.material.card.MaterialCardView>
+
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:layout_margin="10dp"
+           android:orientation="horizontal">
+
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="2"
+               android:text="Amount :"
+               android:textColor="#6D000000"
+               android:gravity="center"
+               android:textSize="17sp"
+
+               >
+
+           </TextView>
+           <com.google.android.material.card.MaterialCardView
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               app:cardCornerRadius="10dp"
+               app:strokeWidth="1dp"
+               app:strokeColor="#1E323739"
+               android:layout_weight="3">
+
+               <EditText
+                   android:id="@+id/amount"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:inputType="number"
+                   android:imeOptions="actionDone"
+                   android:background="#0C000000" />
+
+           </com.google.android.material.card.MaterialCardView>
+
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:layout_margin="10dp"
+           android:orientation="horizontal">
+
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="2"
+               android:text="is Wallet Verified : "
+               android:textColor="#6D000000"
+               android:gravity="center"
+               android:textSize="17sp"
+
+               />
+           <com.google.android.material.card.MaterialCardView
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               app:cardCornerRadius="10dp"
+               app:strokeWidth="1dp"
+               app:strokeColor="#1E323739"
+               android:layout_weight="3">
+
+
+           </com.google.android.material.card.MaterialCardView>
+
+           <CheckBox
+               android:id="@+id/isChecked"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+       </LinearLayout>
+
+     <androidx.cardview.widget.CardView
+         android:layout_width="70dp"
+         android:layout_height="30dp"
+         app:cardCornerRadius="10dp"
+
+         >
+
+         <TextView
+             android:id="@+id/save"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_gravity="center"
+             android:gravity="center"
+             android:clickable="true"
+             android:focusable="true"
+             android:background="#2C00BCD4"
+             android:text="Save"/>
+
+     </androidx.cardview.widget.CardView>
+
+
+
+       </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/border"
+                android:layout_margin="10dp"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="Display Data:"
+                    android:layout_margin="15dp"
+                    android:textColor="#9C0B730E"/>
+
+                <TextView
+                    android:id="@+id/tvUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_marginStart="20dp"
+                    android:textColor="#0B730E"/>
+
+                <TextView
+                    android:id="@+id/tvWallet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_marginStart="20dp"
+                    android:textColor="#9C0B730E"/>
+                <TextView
+                    android:id="@+id/tvAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_marginStart="20dp"
+                    android:textColor="#9C0B730E"/>
+                <TextView
+                    android:id="@+id/tvIsWalletVerified"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_marginStart="20dp"
+                    android:textColor="#9C0B730E"
+                    android:layout_marginBottom="20dp"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+</LinearLayout>
